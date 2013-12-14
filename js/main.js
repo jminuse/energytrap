@@ -18,11 +18,17 @@ function World() {
   this.gas_well_tech = 1/2e8;
   
   this.solar_gen = 0.01; //TW
+  this.solar_wear_out = 1/(30*12); //30 year lifespan
   this.wind_gen = 0.1; //TW
   this.gas_gen = 1.0; //TW
   this.coal_gen = 2.0; //TW
   this.nuclear_gen = 1.0; //TW
   this.hydro_gen = 1.0; //TW
+  
+  this.coal_to_liquids = 0;
+  this.gas_to_liquids = 0;
+  this.ethanol = 0;
+  this.biodiesel = 0;
   
   this.month = 0;
 }
